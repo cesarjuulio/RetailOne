@@ -1,0 +1,100 @@
+body {
+    background: #e6f0ff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 64, 0.08);
+    padding: 32px;
+}
+
+h2 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.add-user {
+    display: block;
+    width: max-content;
+    margin: 0 auto 30px auto;
+    background-color: #6cb9f7;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.add-user {
+    text-decoration: none;
+    color: white;
+}
+
+.add-user:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+}
+
+thead {
+    background-color: #6cb9f7;
+    color: white;
+}
+
+th, td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+    background-color: #f1f7ff;
+    transition: background-color 0.2s;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions i {
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.actions i:hover {
+    transform: scale(1.1);
+}
+
+.edit {
+    color: #4caf50;
+}
+
+.edit:hover {
+    color: #388e3c;
+}
+
+.delete {
+    color: #f44336;
+}
+
+.delete:hover {
+    color: #d32f2f;
+}

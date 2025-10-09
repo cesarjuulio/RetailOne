@@ -1,0 +1,94 @@
+body {
+    background: #e6f0ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 28px 36px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,64,0.08);
+    text-align: center;
+}
+
+.container h2 {
+    color: #1565c0;
+    margin-bottom: 18px;
+}
+
+.container label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #234f7a;
+    margin: 8px 0 6px 0;
+    font-weight: 600;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="number"],
+.container input[type="tel"],
+.container input[type="date"],
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #b3c6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container textarea {
+    width: 100%;
+    min-height: 90px;
+    padding: 10px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #b3c6e6;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.form-row {
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.container button {
+    background: #1565c0;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.container button:hover {
+    background: #0d47a1;
+}
+
+.container .footer {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #888;
+}
+.container a { color: #1565c0; text-decoration: none; }
+.container a:hover { text-decoration: underline; }
