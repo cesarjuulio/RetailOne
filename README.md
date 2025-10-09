@@ -15,10 +15,10 @@
 Fluxo básico dentro do sistema:
 
 - Login: acesse `login.php` para autenticar (use uma conta cadastrada no banco).
-- Perfil: após login, use `perfil.php` para ver/editar informações do usuário.
+- Perfil: após login, use `perfil.php` para ver informações do usuário.
 - Gerenciar produtos:
   - `add-produto.php` — cadastrar um novo produto.
-  - `estoque.php` — listar produtos, buscar por nome e acessar ações (editar/excluir).
+  - `estoque.php` — listar/excluir produtos.
   - `produto_detalhes.php` — mostra detalhes num modal.
 - Gerenciar usuários (apenas administradores):
   - `add-usuario.php` — cadastro de novo usuário.
