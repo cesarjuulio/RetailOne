@@ -27,10 +27,7 @@ if (!isset($_SESSION['matricula'])) {
     </style>
 </head>
 <body>
-    <header class="topbar">
-        <a class="logo" href="index.php"><img src="img/logo_horizontal.png" alt="RetailOne" width="180px" height="50px"></a>
-        <button class="logout" onclick="window.location.href='includes/logout.php'"><i class="fas fa-power-off"></i> Sair</button>
-    </header>
+    <?php include 'includes/nav.php' ?>
 
     <main class="container">
         <h2>Escolha uma opção:</h2>
@@ -53,4 +50,5 @@ if (!isset($_SESSION['matricula'])) {
         </div>
     </main>
 </body>
+
 </html>
