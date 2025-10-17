@@ -32,7 +32,7 @@ $produtos = $produto_obj->get_produtos($filtro);
     <div class="container">
         <h2>Estoque de Produtos</h2>
 
-        <a href="add-produto.php" class="add-produto">+ Adicionar Produto</a>
+        <a href="add_produto.php" class="add-produto">+ Adicionar Produto</a>
 
         <table>
             <thead>
