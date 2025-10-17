@@ -3,7 +3,7 @@
 session_start();
 
 include_once('includes/conexao.php');
-include_once('Produto.php');
+include_once('obj/Produto.php');
 
 $id = $_GET['id'] ?? null;
 if ($id) {

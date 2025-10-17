@@ -3,10 +3,10 @@
 session_start();
 
 include_once('includes/conexao.php');
-include 'Usuario.php';
+include 'obj/Usuario.php';
 
 $usuario_obj = new Usuario($conexao);
-$usuarios = $usuario_obj->get_atores();
+$usuarios = $usuario_obj->get_usuarios();
 
 ?>
 
@@ -26,7 +26,7 @@ $usuarios = $usuario_obj->get_atores();
     <div class="container">
         <h2>Funcionários Cadastrados</h2>
 
-        <a href="add-usuario.php" class="add-user">+ Adicionar Usuário</a>
+        <a href="add_usuario.php" class="add-user">+ Adicionar Usuário</a>
         
         <table>
             <thead>

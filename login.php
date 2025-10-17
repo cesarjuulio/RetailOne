@@ -1,5 +1,5 @@
 <?php 
-session_start(); // Iniciar a sessão no início
+session_start(); 
 
 include_once('includes/conexao.php');
 

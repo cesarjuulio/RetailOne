@@ -2,7 +2,7 @@
 
 session_start();
 include_once('includes/conexao.php');
-include 'Produto.php';
+include 'obj/Produto.php';
 
 if (!isset($_SESSION['matricula'])) {
     header("Location: login.php");

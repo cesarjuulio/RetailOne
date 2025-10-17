@@ -8,10 +8,9 @@ if (!isset($_SESSION['matricula']) || empty($_SESSION['matricula'])) {
     exit();
 }
 
-// Pega a matrícula da sessão
 $matricula = $_SESSION['matricula'];
 
-// Busca os dados completos do usuário no banco
+// Busca os dados do usuário no banco
 $sql = "SELECT nome, email, telefone, tipo_usuario FROM usuario WHERE matricula = ?";
 $stmt = $conexao->prepare($sql);
 $stmt->bind_param("i", $matricula);
@@ -19,7 +18,6 @@ $stmt->execute();
 $result = $stmt->get_result();
 $usuario = $result->fetch_assoc();
 
-// Protege contra XSS
 $nome = htmlspecialchars($usuario['nome']);
 $email = htmlspecialchars($usuario['email']);
 $telefone = htmlspecialchars($usuario['telefone']);

@@ -59,6 +59,27 @@ CREATE TABLE IF NOT EXISTS `produto` (
     `data_cadastro` DATETIME DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+-- Usuário padrão para poder fazer o primeiro login
+-- --------------------------------------------------------
+
+INSERT INTO usuario (
+    matricula,
+    nome,
+    email,
+    telefone,
+    senha,
+    tipo_usuario
+) VALUES (
+    1,
+    'Teste',
+    'teste@teste.com',
+    '(99) 99999-9999',
+    '$2y$10$g4HPeT9tbrNJ18hL3lCi8.PedfIg4IDazap2VVPSVSH...',
+    'administrador'
+);
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
